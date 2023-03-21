@@ -1,0 +1,99 @@
+// Variables
+$primary-color: #39cdcc;
+$secondary-color: #213f7d;
+$background-color: #ecf0f1;
+$text-color: #545f7d;
+
+// Styles
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: $background-color;
+	color: $text-color;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.page {
+	margin-bottom: 20px;
+}
+
+.users {
+	padding: 30px;
+	background: #ffffff;
+	border: 1px solid rgba(33, 63, 125, 0.06);
+	box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+	border-radius: 4px;
+	overflow-x: auto;
+
+	.users-container {
+		min-width: 1000px;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	.thead {
+		text-align: left;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 14px;
+		text-transform: uppercase;
+	}
+
+	.tdata {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		margin: 20px 0;
+	}
+}
+
+.space {
+	margin: 16px 0;
+}
+
+button {
+	background: #39cdcc;
+	border: 1px solid #39cdcc;
+	border-radius: 8px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+
+	button {
+		background: $primary-color;
+		border: 1px solid $primary-color;
+		padding: 12px 32px;
+		color: #ffffff;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: darken($primary-color, 10%);
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+}
